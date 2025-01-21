@@ -1,0 +1,60 @@
+.container__fondo {
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco transparente */
+  max-width: 400px;
+  min-width: 300px;
+  width: 400px;
+  color: blue;
+  border-radius: 10px; /* Valor de redondeo para las cuatro esquinas */
+}
+
+.operands__container {
+  height: 150px;
+  padding: 3px;
+  border-radius: 10px;
+  border: 2px solid grey;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: black;
+}
+.operands {
+  color: white;
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 30px;
+  margin: 20px;
+}
+.operand__primero {
+  font-size: 25px;
+}
+.btn-container {
+  padding: 30px 30px;
+}
+#btn-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+#btn-grid > button {
+  padding: 10px;
+  color: grey;
+  font-weight: bold;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: #c9c9c9;
+  font-size: 25px;
+  background-color: transparent; /* Establece el color de fondo como transparente */
+}
+#btn-grid > button:nth-child(2) {
+  grid-column: span 2;
+}
+
+#btn-grid > button:nth-child(18) {
+  grid-column: span 2;
+}

@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.section_item {
+  height: auto;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background colors */
+.color-2 {
+  background: -webkit-linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+  background: -moz-linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+  background: -ms-linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+  background: -o-linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+  background: linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+}
