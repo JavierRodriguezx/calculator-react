@@ -5,21 +5,22 @@ import ComponeteVentana from "./componentes/ComponeteVentana";
 import Botones from "./Botones";
 
 function App() {
-  const [operando1, setOperando1] = useState(0);
-  const [operando2, setOperando2] = useState(0);
-  const [operador, setOperador] = useState("");
-  console.log(operando2);
+  const [state, setState] = useState({
+    visor1: "|",
+    visor2: " ",
+    operador: null,
+    valorActual1: "",
+    valorActual2: "",
+    total: 0,
+  });
+  
+  
   return (
     <div>
       <ContainerCalculadora>
-        <ComponeteVentana operando1={operando1} operando2={operando2} />
+        <ComponeteVentana visor1={state.visor1} visor2={state.visor2} />
         <Botones
-          operando2={operando2}
-          operando1={operando1}
-          setOperando2={setOperando2}
-          setOperando1={setOperando1}
-          operador={operador}
-          setOperador={setOperador}
+          state={state} setState={setState}
         />
       </ContainerCalculadora>
     </div>
