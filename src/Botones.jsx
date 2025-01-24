@@ -34,6 +34,18 @@ function Botones({
     })
   };
   const handleOperation = (operation) => {
+  if (state.visor1 === '|' && operation === '+'){
+    return
+  }
+  if (state.visor1 === '|' && operation === '-'){
+    return
+  }
+  if (state.visor1 === '|' && operation === '/'){
+    return
+  }
+  if (state.visor1 === '|' && operation === '*'){
+    return
+  }
     if (!state.operador){
       setState({
         ...state,
